@@ -14,6 +14,8 @@
 		FF0D59BF2477165500203640 /* Where2Eat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF0D59BD2477165500203640 /* Where2Eat.xcdatamodeld */; };
 		FF0D59C12477165700203640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF0D59C02477165700203640 /* Assets.xcassets */; };
 		FF0D59C42477165700203640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0D59C22477165700203640 /* LaunchScreen.storyboard */; };
+		FF0D59CC2477233900203640 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF0D59CB2477233900203640 /* Pacifico-Regular.ttf */; };
+		FF0D59CE2477236900203640 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF0D59CD2477236900203640 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FF0D59C02477165700203640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF0D59C32477165700203640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF0D59C52477165700203640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF0D59CB2477233900203640 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pacifico-Regular.ttf"; path = "../../../../Downloads/Pacifico/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		FF0D59CD2477236900203640 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				FF0D59B82477165500203640 /* ViewController.swift */,
 				FF0D59BA2477165500203640 /* Main.storyboard */,
 				FF0D59C02477165700203640 /* Assets.xcassets */,
+				FF0D59CB2477233900203640 /* Pacifico-Regular.ttf */,
+				FF0D59CD2477236900203640 /* Montserrat-Regular.ttf */,
 				FF0D59C22477165700203640 /* LaunchScreen.storyboard */,
 				FF0D59C52477165700203640 /* Info.plist */,
 				FF0D59BD2477165500203640 /* Where2Eat.xcdatamodeld */,
@@ -129,7 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF0D59C42477165700203640 /* LaunchScreen.storyboard in Resources */,
+				FF0D59CC2477233900203640 /* Pacifico-Regular.ttf in Resources */,
 				FF0D59C12477165700203640 /* Assets.xcassets in Resources */,
+				FF0D59CE2477236900203640 /* Montserrat-Regular.ttf in Resources */,
 				FF0D59BC2477165500203640 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
