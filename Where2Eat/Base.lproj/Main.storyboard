@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Where2 Eat View Controller-->
         <scene sceneID="BRF-xd-stQ">
             <objects>
-                <viewController id="NLW-3d-Jl4" sceneMemberID="viewController">
+                <viewController id="NLW-3d-Jl4" customClass="Where2EatViewController" customModule="Where2Eat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bPh-Tr-f3Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
                                 <state key="normal" title="Random"/>
+                                <connections>
+                                    <action selector="randomButton:" destination="NLW-3d-Jl4" eventType="touchUpInside" id="4S0-s4-j1X"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where2Eat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5O-PC-7DJ">
                                 <rect key="frame" x="48" y="111" width="319" height="62"/>
