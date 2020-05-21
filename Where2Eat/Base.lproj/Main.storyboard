@@ -61,7 +61,7 @@
         <!--Add a restaurant-->
         <scene sceneID="h9M-Ey-sYo">
             <objects>
-                <viewController id="qhm-8X-Pst" sceneMemberID="viewController">
+                <viewController id="qhm-8X-Pst" customClass="AddRestaurantViewController" customModule="Where2Eat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="msV-og-poK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,17 +78,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameOfRestaurant:" destination="qhm-8X-Pst" eventType="editingDidEnd" id="QWS-qf-ITf"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1W-t9-P45">
                                 <rect key="frame" x="151" y="218" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save Restaurant"/>
+                                <connections>
+                                    <action selector="saveRestaurantButton:" destination="qhm-8X-Pst" eventType="touchUpInside" id="G3v-QP-020"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7W6-ZF-eUI"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add a restaurant" id="qUZ-XN-Vo9"/>
+                    <connections>
+                        <outlet property="nameOfRestaurant" destination="X48-wO-9HA" id="JGg-Pn-Zue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5SL-IG-xYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
