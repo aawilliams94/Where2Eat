@@ -10,8 +10,9 @@ import UIKit
 
 class Where2EatViewController: UIViewController {
 
-    var listOfRestaurants = [String]()
-    var timer = Timer()
+    struct structname {
+        static var listOfRestaurants = [String]()
+    }
 
     
     @IBAction func promptForAnswer() {
@@ -21,7 +22,7 @@ class Where2EatViewController: UIViewController {
         let submitAction = UIAlertAction(title: "Submit", style: .default) { [unowned ac] _ in
             let answer = ac.textFields![0]
          
-            self.listOfRestaurants.append(answer.text!)
+            Where2EatViewController.structname.listOfRestaurants.append(answer.text!)
         }
 
         ac.addAction(submitAction)
@@ -30,9 +31,9 @@ class Where2EatViewController: UIViewController {
     }
     
    @IBAction func showAlert() {
-    let randomNumber = Int.random(in: 0..<listOfRestaurants.count)
+    let randomNumber = Int.random(in: 0..<Where2EatViewController.structname.listOfRestaurants.count)
        
-       let alertController = UIAlertController(title: nil, message: listOfRestaurants[randomNumber], preferredStyle: .alert)
+    let alertController = UIAlertController(title: nil, message: Where2EatViewController.structname.listOfRestaurants[randomNumber], preferredStyle: .alert)
        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
        alertController.addAction(alertAction)
        

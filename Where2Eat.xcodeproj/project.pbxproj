@@ -19,6 +19,8 @@
 		FF0D59D024772CF500203640 /* Where2EatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D59CF24772CF500203640 /* Where2EatViewController.swift */; };
 		FF0D59D224772F9100203640 /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D59D124772F9100203640 /* AddRestaurantViewController.swift */; };
 		FF42C32D247FDF8F000222E8 /* ListOfRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42C32C247FDF8F000222E8 /* ListOfRestaurantsViewController.swift */; };
+		FF42C32F24806ED1000222E8 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = FF42C32E24806ED1000222E8 /* gradient.png */; };
+		FF42C33124806F0C000222E8 /* Where2Eat.png in Resources */ = {isa = PBXBuildFile; fileRef = FF42C33024806F0C000222E8 /* Where2Eat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		FF0D59CF24772CF500203640 /* Where2EatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where2EatViewController.swift; sourceTree = "<group>"; };
 		FF0D59D124772F9100203640 /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
 		FF42C32C247FDF8F000222E8 /* ListOfRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfRestaurantsViewController.swift; sourceTree = "<group>"; };
+		FF42C32E24806ED1000222E8 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = ../../../../Downloads/gradient.png; sourceTree = "<group>"; };
+		FF42C33024806F0C000222E8 /* Where2Eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Where2Eat.png; path = ../../../../Downloads/Where2Eat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				FF0D59C22477165700203640 /* LaunchScreen.storyboard */,
 				FF0D59C52477165700203640 /* Info.plist */,
 				FF0D59BD2477165500203640 /* Where2Eat.xcdatamodeld */,
+				FF42C33024806F0C000222E8 /* Where2Eat.png */,
+				FF42C32E24806ED1000222E8 /* gradient.png */,
 			);
 			path = Where2Eat;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF0D59C42477165700203640 /* LaunchScreen.storyboard in Resources */,
+				FF42C32F24806ED1000222E8 /* gradient.png in Resources */,
 				FF0D59CC2477233900203640 /* Pacifico-Regular.ttf in Resources */,
 				FF0D59C12477165700203640 /* Assets.xcassets in Resources */,
 				FF0D59CE2477236900203640 /* Montserrat-Regular.ttf in Resources */,
+				FF42C33124806F0C000222E8 /* Where2Eat.png in Resources */,
 				FF0D59BC2477165500203640 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class ListOfRestaurantsViewController: UIViewController {
+
 
     @IBOutlet weak var listOfRestaurantsText: UITextView!
     
@@ -16,11 +18,13 @@ class ListOfRestaurantsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+  
         
+        }
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -31,4 +35,4 @@ class ListOfRestaurantsViewController: UIViewController {
     }
     */
 
-}
+
