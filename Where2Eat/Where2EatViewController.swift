@@ -10,27 +10,43 @@ import UIKit
 
 class Where2EatViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var listOfRestaurants = [String]()
+    var timer = Timer()
 
-        // Do any additional setup after loading the view.
+    
+    @IBAction func promptForAnswer() {
+        let ac = UIAlertController(title: "Enter new restaurant", message: nil, preferredStyle: .alert)
+        ac.addTextField()
+
+        let submitAction = UIAlertAction(title: "Submit", style: .default) { [unowned ac] _ in
+            let answer = ac.textFields![0]
+         
+            self.listOfRestaurants.append(answer.text!)
+        }
+
+        ac.addAction(submitAction)
+
+        present(ac, animated: true)
     }
     
+   @IBAction func showAlert() {
+    let randomNumber = Int.random(in: 0..<listOfRestaurants.count)
+       
+       let alertController = UIAlertController(title: nil, message: listOfRestaurants[randomNumber], preferredStyle: .alert)
+       let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+       alertController.addAction(alertAction)
+       
+       self.present(alertController, animated: true, completion: nil)
+   }
+    
+    
 
-   
-    @IBAction func randomButton(_ sender: UIButton) {
-    /*
-        let selectedEmotion = sender.titleLabel!.text
-        
-        let messageOptions = songOptions[emojis[selectedEmotion!]!]!.count
-        let emojiMessage = songOptions[emojis[selectedEmotion!]!]?[Int.random(in:0 ... messageOptions-1)]
-         
-        //create the alert
-        let emojiAlert =  UIAlertController (title: "Here's a restaurant!", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
-        
-    }
- 
- */
+  override func viewDidLoad() {
+      super.viewDidLoad()
+    
+      // Do any additional setup after loading the view.
+  }
+    
 
-    }
+    
 }

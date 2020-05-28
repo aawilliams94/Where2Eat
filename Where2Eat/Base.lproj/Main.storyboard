@@ -24,21 +24,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWe-o2-OL6">
-                                <rect key="frame" x="102" y="320" width="210" height="43"/>
+                                <rect key="frame" x="82" y="263" width="252" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
                                 <state key="normal" title="Add a restaurant"/>
                                 <connections>
-                                    <segue destination="qhm-8X-Pst" kind="show" id="bb3-pb-2HK"/>
+                                    <action selector="promptForAnswer" destination="NLW-3d-Jl4" eventType="touchUpInside" id="vLh-D6-Vdv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drN-aN-u2x">
-                                <rect key="frame" x="144" y="424" width="127" height="48"/>
+                                <rect key="frame" x="144" y="308" width="127" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
                                 <state key="normal" title="Random"/>
                                 <connections>
-                                    <action selector="randomButton:" destination="NLW-3d-Jl4" eventType="touchUpInside" id="4S0-s4-j1X"/>
+                                    <action selector="showAlert" destination="NLW-3d-Jl4" eventType="touchUpInside" id="0ct-3w-TSn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where2Eat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5O-PC-7DJ">
@@ -48,60 +48,76 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3c-ws-Ype">
+                                <rect key="frame" x="72" y="364" width="262" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="List of Restaurants"/>
+                                <connections>
+                                    <segue destination="VUS-VC-Uzg" kind="presentation" id="4pa-vC-PL8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hOR-BV-w6S"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5zc-1h-0N5"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="5zc-1h-0N5">
+                        <barButtonItem key="backBarButtonItem" title="Main" id="bbS-aQ-wEc"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofn-Mp-c8q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066.6666666666667" y="103.79464285714285"/>
         </scene>
-        <!--Add a restaurant-->
-        <scene sceneID="h9M-Ey-sYo">
+        <!--List of Restaurants-->
+        <scene sceneID="1Sw-Pu-PZV">
             <objects>
-                <viewController id="qhm-8X-Pst" customClass="AddRestaurantViewController" customModule="Where2Eat" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="msV-og-poK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController title="List of Restaurants" modalPresentationStyle="formSheet" id="VUS-VC-Uzg" customClass="ListOfRestaurantsViewController" customModule="Where2Eat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lfh-t5-ik1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of Restaurant:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzZ-S1-fGM">
-                                <rect key="frame" x="20" y="157" width="157" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where2Eat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcf-3r-jxW">
+                                <rect key="frame" x="59" y="20" width="296" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="58"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-mD-Gya">
+                                <rect key="frame" x="101" y="114" width="223" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-Ga-Aum">
+                                <rect key="frame" x="34" y="171" width="321" height="579"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X48-wO-9HA">
-                                <rect key="frame" x="185" y="150" width="189" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="nameOfRestaurant:" destination="qhm-8X-Pst" eventType="editingDidEnd" id="QWS-qf-ITf"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1W-t9-P45">
-                                <rect key="frame" x="151" y="218" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save Restaurant"/>
-                                <connections>
-                                    <action selector="saveRestaurantButton:" destination="qhm-8X-Pst" eventType="touchUpInside" id="G3v-QP-020"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="7W6-ZF-eUI"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="Ci6-4o-9e3"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="u19-7K-r60" appends="YES" id="Jro-y2-Zun"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Add a restaurant" id="qUZ-XN-Vo9"/>
                     <connections>
-                        <outlet property="nameOfRestaurant" destination="X48-wO-9HA" id="JGg-Pn-Zue"/>
+                        <outlet property="swipeGesture" destination="u19-7K-r60" id="qhB-xt-P9e"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5SL-IG-xYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2cH-2d-IVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="u19-7K-r60">
+                    <connections>
+                        <segue destination="VUS-VC-Uzg" kind="modal" id="Cdf-2B-CgH"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1808.6956521739132" y="108.48214285714285"/>
+            <point key="canvasLocation" x="1778.2608695652175" y="120.53571428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LHK-Kh-4de">

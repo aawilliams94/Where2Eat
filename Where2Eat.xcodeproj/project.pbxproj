@@ -18,6 +18,7 @@
 		FF0D59CE2477236900203640 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF0D59CD2477236900203640 /* Montserrat-Regular.ttf */; };
 		FF0D59D024772CF500203640 /* Where2EatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D59CF24772CF500203640 /* Where2EatViewController.swift */; };
 		FF0D59D224772F9100203640 /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D59D124772F9100203640 /* AddRestaurantViewController.swift */; };
+		FF42C32D247FDF8F000222E8 /* ListOfRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42C32C247FDF8F000222E8 /* ListOfRestaurantsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FF0D59CD2477236900203640 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		FF0D59CF24772CF500203640 /* Where2EatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where2EatViewController.swift; sourceTree = "<group>"; };
 		FF0D59D124772F9100203640 /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
+		FF42C32C247FDF8F000222E8 /* ListOfRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfRestaurantsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				FF0D59B62477165500203640 /* SceneDelegate.swift */,
 				FF0D59B82477165500203640 /* ViewController.swift */,
 				FF0D59BA2477165500203640 /* Main.storyboard */,
+				FF42C32C247FDF8F000222E8 /* ListOfRestaurantsViewController.swift */,
 				FF0D59D124772F9100203640 /* AddRestaurantViewController.swift */,
 				FF0D59CF24772CF500203640 /* Where2EatViewController.swift */,
 				FF0D59C02477165700203640 /* Assets.xcassets */,
@@ -161,6 +164,7 @@
 				FF0D59D024772CF500203640 /* Where2EatViewController.swift in Sources */,
 				FF0D59B72477165500203640 /* SceneDelegate.swift in Sources */,
 				FF0D59D224772F9100203640 /* AddRestaurantViewController.swift in Sources */,
+				FF42C32D247FDF8F000222E8 /* ListOfRestaurantsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
